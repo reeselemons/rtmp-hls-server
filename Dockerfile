@@ -107,6 +107,9 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 # Copy  nginx config file to container
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 
+COPY private-key.crt /etc/nginx/private-key.crt
+COPY cert.crt /etc/nginx/cert.crt
+
 # Copy  html players to container
 COPY players /usr/local/nginx/html/players
 
