@@ -111,7 +111,7 @@ COPY proxy_soakedstudios_com.pem /etc/nginx/proxy_soakedstudios_com.pem
 COPY proxy.soakedstudios.com.crt /etc/nginx/proxy.soakedstudios.com.crt
 
 # Copy  html players to container
-COPY players /usr/local/nginx/html/players
+# COPY players /usr/local/nginx/html/players
 
 EXPOSE 1935
 EXPOSE 8080
