@@ -107,8 +107,8 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 # Copy  nginx config file to container
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 
-COPY proxy_soakedstudios_com.pem /etc/nginx/proxy_soakedstudios_com.pem
-COPY proxy.soakedstudios.com.crt /etc/nginx/proxy.soakedstudios.com.crt
+COPY proxyhoulemcom.key /etc/nginx/proxyhoulemcom.key
+COPY proxyhoulemcom.crt /etc/nginx/proxyhoulemcom.crt
 
 # Copy  html players to container
 COPY players /usr/local/nginx/html/players
